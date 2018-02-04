@@ -37,7 +37,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if( status == CLAuthorizationStatus.denied){
-            showLocationDisable()
+            //showLocationDisable()
         }
     }
    /* func showLocationDisable(){
