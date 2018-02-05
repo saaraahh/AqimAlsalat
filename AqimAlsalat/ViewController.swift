@@ -25,7 +25,8 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
             locationManager.startUpdatingLocation()
         }
     }
-    
+    // sarah 
+  //dalal
     //implemintation
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first
