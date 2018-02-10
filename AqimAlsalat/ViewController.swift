@@ -9,6 +9,7 @@
 
 import UIKit
 import GoogleMaps
+import MapKit
 
 class ViewController: UIViewController,CLLocationManagerDelegate {
     
@@ -72,23 +73,22 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
             nodes.enqueue(element: m2)
             
             peekNode = nodes.peek()!
-            print(" * Node(priority: \(peekNode.priority))"+" * Node(names: \(peekNode.location.altitude))"+" * Node(names: \(peekNode.name))")
+            print(" * Node(priority: \(peekNode.priority))"+" * Node(names: \(peekNode.location.coordinate.latitude))"+" * Node(names: \(peekNode.name))")
             
+      //  callGoogleMaps(latitude: peekNode.location.coordinate.latitude,longitude:peekNode.location.coordinate.longitude)
+
+                
         }
-        else{
-            print("reeed")
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            else{
+                print("reeed")
+            }
+
+          
+       
         
     }
+    
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         userLocation = locations.last!
@@ -121,7 +121,6 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         
         
         
-        
         locationManager.stopUpdatingLocation()
     }
     
@@ -149,6 +148,36 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    func callGoogleMaps(latitude: Double,longitude: Double)//check spelling
+    {
+        
+        let strLat = String (latitude)
+        let strLong = String (longitude)
+        //Use this code for opening in google map if it's installed else open in default apple map.
+        if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
+            UIApplication.shared.open(URL(string: "comgooglemaps://?center=\(strLat),\(strLong )")!, options: [:], completionHandler: nil)
+            
+        } else if (UIApplication.shared.canOpenURL(NSURL(string:"https://maps.google.com")! as URL))
+        {
+            showLocationDisable()
+            UIApplication.shared.open(URL(string: "https://maps.google.com/?q=@\(strLat),\(strLong )")!, options: [:], completionHandler: nil)
+        }
+            
+        else {
+            print("Opening in Apple Map")
+            
+            let coordinate = CLLocationCoordinate2DMake(23.035007, 72.529324)
+            let region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.01, 0.02))
+            let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+            let mapItem = MKMapItem(placemark: placemark)
+            let options = [
+                MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: region.center),
+                MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: region.span)]
+            mapItem.name = "Dalal"
+            mapItem.openInMaps(launchOptions: options)
+        }
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
