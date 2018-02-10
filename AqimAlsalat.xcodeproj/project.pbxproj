@@ -18,6 +18,7 @@
 		700AB695202064F5007825B1 /* AqimAlsalatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AB694202064F5007825B1 /* AqimAlsalatUITests.swift */; };
 		C18DC5E8F2483043A1E82BEB /* Pods_AqimAlsalatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285AB6B075ED7C19EE0FA3E /* Pods_AqimAlsalatUITests.framework */; };
 		CE3330CD73D10BAF60C612AE /* Pods_AqimAlsalatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38F7CFC6746C6156D99DEE9 /* Pods_AqimAlsalatTests.framework */; };
+		E42CD4C4202F645F00F6632C /* abc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CD4C3202F645F00F6632C /* abc.swift */; };
 		E445626D202EEC44002EBE4F /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445626C202EEC44002EBE4F /* Heap.swift */; };
 		E445626F202EEC56002EBE4F /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445626E202EEC56002EBE4F /* PriorityQueue.swift */; };
 		E4456271202EEC7A002EBE4F /* Mosque.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4456270202EEC7A002EBE4F /* Mosque.swift */; };
@@ -62,6 +63,7 @@
 		7285AB6B075ED7C19EE0FA3E /* Pods_AqimAlsalatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AqimAlsalatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4F0AFBC11239A7EAFA3242 /* Pods-AqimAlsalat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AqimAlsalat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AqimAlsalat/Pods-AqimAlsalat.debug.xcconfig"; sourceTree = "<group>"; };
 		9D1CFF14198CFAD6C92F29E1 /* Pods-AqimAlsalatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AqimAlsalatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AqimAlsalatTests/Pods-AqimAlsalatTests.release.xcconfig"; sourceTree = "<group>"; };
+		E42CD4C3202F645F00F6632C /* abc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abc.swift; sourceTree = "<group>"; };
 		E445626C202EEC44002EBE4F /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		E445626E202EEC56002EBE4F /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		E4456270202EEC7A002EBE4F /* Mosque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosque.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				700AB674202064F5007825B1 /* AppDelegate.swift */,
 				700AB676202064F5007825B1 /* ViewController.swift */,
+				E42CD4C3202F645F00F6632C /* abc.swift */,
 				56F4AC0A202F632500E0929A /* arwa.swift */,
 				E4456272202EEC96002EBE4F /* Location1.gpx */,
 				E445626C202EEC44002EBE4F /* Heap.swift */,
@@ -474,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42CD4C4202F645F00F6632C /* abc.swift in Sources */,
 				E445626D202EEC44002EBE4F /* Heap.swift in Sources */,
 				E445626F202EEC56002EBE4F /* PriorityQueue.swift in Sources */,
 				56F4AC0B202F632500E0929A /* arwa.swift in Sources */,
