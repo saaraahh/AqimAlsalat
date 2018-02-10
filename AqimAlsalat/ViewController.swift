@@ -17,7 +17,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     var locationManager = CLLocationManager()
     var camera = GMSCameraPosition.camera(withLatitude: 24.725239, longitude: 46.637492, zoom: 13.0)
     var  userLocation = CLLocation()
-    
+    let txt =  "we need your location please open the setting and enaible your location"
+
     //markers locations
     var userLocation1 =  CLLocation(latitude: 24.723561, longitude: 46.622433)
     var userLocation2 =  CLLocation(latitude: 24.713739, longitude: 46.613850)
@@ -124,7 +125,29 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
     }
     
-    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if( status == CLAuthorizationStatus.denied){
+            showLocationDisable()
+        }
+        
+    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Failed to find user's location: \(error.localizedDescription)")
+    }
+    func showLocationDisable(){
+        let alert = UIAlertController(title: "you disable the app", message:txt, preferredStyle: .alert)//preferredStyle can be alert or action sheet *Dalal*
+        
+        let cancel = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
+        let open = UIAlertAction(title: "open setting", style: .default) {(action) in
+            if let url = URL(string: UIApplicationOpenSettingsURLString){
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                
+            }// end of if condition
+        }
+        alert.addAction(cancel)
+        alert.addAction(open)
+        self.present(alert, animated: true, completion: nil)
+    }
     
     
     override func didReceiveMemoryWarning() {
