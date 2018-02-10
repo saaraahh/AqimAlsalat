@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56F4AC0B202F632500E0929A /* arwa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4AC0A202F632500E0929A /* arwa.swift */; };
 		58104232F7177B16B0561B26 /* Pods_AqimAlsalat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C8C74D3A65D8D5523C658B /* Pods_AqimAlsalat.framework */; };
 		700AB675202064F5007825B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AB674202064F5007825B1 /* AppDelegate.swift */; };
 		700AB677202064F5007825B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AB676202064F5007825B1 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		47C8C74D3A65D8D5523C658B /* Pods_AqimAlsalat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AqimAlsalat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F4AC0A202F632500E0929A /* arwa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arwa.swift; sourceTree = "<group>"; };
 		600713B0536D7291896D8704 /* Pods-AqimAlsalatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AqimAlsalatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AqimAlsalatUITests/Pods-AqimAlsalatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		690AD7C375DDB7A4DD75E891 /* Pods-AqimAlsalatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AqimAlsalatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AqimAlsalatUITests/Pods-AqimAlsalatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6AFB20880A391BE7AF351E39 /* Pods-AqimAlsalat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AqimAlsalat.release.xcconfig"; path = "Pods/Target Support Files/Pods-AqimAlsalat/Pods-AqimAlsalat.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				700AB674202064F5007825B1 /* AppDelegate.swift */,
 				700AB676202064F5007825B1 /* ViewController.swift */,
+				56F4AC0A202F632500E0929A /* arwa.swift */,
 				E4456272202EEC96002EBE4F /* Location1.gpx */,
 				E445626C202EEC44002EBE4F /* Heap.swift */,
 				E445626E202EEC56002EBE4F /* PriorityQueue.swift */,
@@ -473,6 +476,7 @@
 			files = (
 				E445626D202EEC44002EBE4F /* Heap.swift in Sources */,
 				E445626F202EEC56002EBE4F /* PriorityQueue.swift in Sources */,
+				56F4AC0B202F632500E0929A /* arwa.swift in Sources */,
 				700AB677202064F5007825B1 /* ViewController.swift in Sources */,
 				E4456271202EEC7A002EBE4F /* Mosque.swift in Sources */,
 				700AB675202064F5007825B1 /* AppDelegate.swift in Sources */,
