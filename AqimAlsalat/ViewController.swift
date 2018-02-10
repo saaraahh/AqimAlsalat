@@ -166,7 +166,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         else {
             print("Opening in Apple Map")
             
-            let coordinate = CLLocationCoordinate2DMake(23.035007, 72.529324)
+            let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
             let region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.01, 0.02))
             let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
             let mapItem = MKMapItem(placemark: placemark)
