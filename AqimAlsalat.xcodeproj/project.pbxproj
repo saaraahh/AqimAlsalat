@@ -16,6 +16,7 @@
 		700AB67F202064F5007825B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700AB67D202064F5007825B1 /* LaunchScreen.storyboard */; };
 		700AB68A202064F5007825B1 /* AqimAlsalatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AB689202064F5007825B1 /* AqimAlsalatTests.swift */; };
 		700AB695202064F5007825B1 /* AqimAlsalatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AB694202064F5007825B1 /* AqimAlsalatUITests.swift */; };
+		70FDB09F2030172800A9C55A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDB09E2030172800A9C55A /* File.swift */; };
 		C18DC5E8F2483043A1E82BEB /* Pods_AqimAlsalatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285AB6B075ED7C19EE0FA3E /* Pods_AqimAlsalatUITests.framework */; };
 		CE3330CD73D10BAF60C612AE /* Pods_AqimAlsalatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38F7CFC6746C6156D99DEE9 /* Pods_AqimAlsalatTests.framework */; };
 		E42CD4C4202F645F00F6632C /* abc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CD4C3202F645F00F6632C /* abc.swift */; };
@@ -60,6 +61,7 @@
 		700AB690202064F5007825B1 /* AqimAlsalatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AqimAlsalatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		700AB694202064F5007825B1 /* AqimAlsalatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqimAlsalatUITests.swift; sourceTree = "<group>"; };
 		700AB696202064F5007825B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FDB09E2030172800A9C55A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		7285AB6B075ED7C19EE0FA3E /* Pods_AqimAlsalatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AqimAlsalatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4F0AFBC11239A7EAFA3242 /* Pods-AqimAlsalat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AqimAlsalat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AqimAlsalat/Pods-AqimAlsalat.debug.xcconfig"; sourceTree = "<group>"; };
 		9D1CFF14198CFAD6C92F29E1 /* Pods-AqimAlsalatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AqimAlsalatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AqimAlsalatTests/Pods-AqimAlsalatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				700AB67B202064F5007825B1 /* Assets.xcassets */,
 				700AB67D202064F5007825B1 /* LaunchScreen.storyboard */,
 				700AB680202064F5007825B1 /* Info.plist */,
+				70FDB09E2030172800A9C55A /* File.swift */,
 			);
 			path = AqimAlsalat;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				E445626F202EEC56002EBE4F /* PriorityQueue.swift in Sources */,
 				56F4AC0B202F632500E0929A /* arwa.swift in Sources */,
 				700AB677202064F5007825B1 /* ViewController.swift in Sources */,
+				70FDB09F2030172800A9C55A /* File.swift in Sources */,
 				E4456271202EEC7A002EBE4F /* Mosque.swift in Sources */,
 				700AB675202064F5007825B1 /* AppDelegate.swift in Sources */,
 			);
